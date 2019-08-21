@@ -362,6 +362,7 @@ const programs = [{
 
 ];
 
+document.addEventListener('DOMContentLoaded', (() => {
 
 const locationSelection = document.getElementsByTagName('select')[0];
 const programsSelection = document.getElementsByTagName('select')[1];
@@ -369,8 +370,10 @@ const programsSelection = document.getElementsByTagName('select')[1];
 locationSelection.addEventListener('change', (() => {
   programsSelection.innerHTML = `<option></option>`
   const userSelection = locationSelection.value;
+  console.log(userSelection);
 
   function filterPrograms(locationID) {
+    console.log(locationID);
     const locationPrograms = programs
       .filter(program => program.location_id === locationID)
       .map(program => program.program);
@@ -386,21 +389,22 @@ locationSelection.addEventListener('change', (() => {
     case 'Online':
       filterPrograms('1');
       break;
-    case 'Bowling Green':
+    case 'Bowling Green, KY':
       filterPrograms('2');
       break;
-    case 'Columbus':
+    case 'Columbus, OH':
       filterPrograms('3');
       break;
-    case 'Clarksville':
+    case 'Clarksville, TN':
       filterPrograms('4');
       break;
-    case 'Murfreesboro':
+    case 'Murfreesboro, TN':
       filterPrograms('5');
       break;
-    case 'Nashville':
+    case 'Nashville, TN':
       filterPrograms('6');
       break;
   };
 
+}));
 }));
