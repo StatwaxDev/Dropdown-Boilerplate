@@ -22,7 +22,7 @@ You will also need to add the `location` names to the switch statment. Please ma
       ...
 ```
 ### If Using a CMS
-If you are using a content management system, you may need to enable `strict mode` and or be wrap the script in a explicit script tag
+If you are using a content management system, you may need to enable `strict mode` and or wrap the script in a `explicit script tag`.
 ```javascript
 <script type="text/javascript">
 YOUR CODE HERE
