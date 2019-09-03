@@ -16,7 +16,7 @@ const programs = []; // add your program json
 ```
 You will also need to add the `location` names to the switch statment. Please make sure each case matches the dropdowns text, this will allow the code to function as intended.
 ```javascript
-  switch(userSelection) { //checks which case matched the user's selection and passes the corresponding locaiton id to the filter programs fucntion
+  switch(userSelection) { //checks which case matched the user's selection and passes the corresponding locaiton id to the filter programs function
     case 'LOCATION_1': //ENTER YOUR LOCATIONS NAME
       filterPrograms('1');
       ...
