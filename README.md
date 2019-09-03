@@ -4,8 +4,11 @@ A template for a dropdown
 
 ## Get Started
 
-Either Clone this repo or Copy and paste the contents of this repository.
-
+Either clone this or copy and paste the contents of this repository.
+```bash
+ HTTPS $ git clone https://github.com/StatwaxDev/Dropdown-Boilerplate.git
+ SSH $ git clone git@github.com:StatwaxDev/Dropdown-Boilerplate.git
+```
 ## Usage
 
 This is a dyanmic dropdown for a College location's and their program's. Where the location selected dynamically loads the programs of the selected location.
@@ -27,3 +30,4 @@ If you are using a content management system, you may need to enable `strict mod
 <script type="text/javascript">
 YOUR CODE HERE
 </script>
+```
